@@ -1,0 +1,26 @@
+
+</br>
+<img id="bulb" src="./bulb.png"> 
+<style>
+#toggle {
+    background: blue;
+    color: white;
+}
+#bulb {
+    width: 100px;
+}
+</style>
+</br>
+<input type="range" id="bulbRange" min="0" max="1" step="0.1" value="0">
+</br>
+<label for="volume">intensivity</label>
+</br>
+<script>
+     bulb.style.opacity = '0';
+    "use strict"
+const bulbRange = document.getElementById("bulbRange");
+bulbRange.addEventListener("change", () => {
+    const bulb = document.getElementById("bulb");
+    bulb.style.opacity = bulbRange.value;
+});
+</script>
