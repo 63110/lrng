@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        const rightuser="Админ"
+    const  username = prompt('Введите имя посетителя', '');
+   
+    
+        if (username=='Admin'){
+            const adminPass= prompt('Введите пароль', '')
+        }
+          else if  (username ===null)
+          {
+            alert('Я вас не знаю');
+        }
+        else if  (username !='Admin')
+          {
+            alert('Я вас не знаю');
+        }
+        
+    if (adminPass!='Main')
+    {
+        alert ("Неверный пароль");
+    }
+    else if (adminPass==='Main') 
+        {
+            alert('hello');
+        }
+
+    </script>
+</body>
+
+</html>
