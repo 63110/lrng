@@ -10,13 +10,12 @@
 <body>
     <script>
         'use strict';
-let message;
-
-let message = (login == 'Сотрудник') ? 'Привет' :
- login == Директор) ? 'Здравствуйте':
- login == Нет_логина) ? 'Вы кто,';
-
-alert ()
+const login = prompt('Имя пользователя');
+let message = (login == 'Сотрудник') ? 'Привет':
+ (login == 'Директор') ? 'Здравствуйте':
+ (login == '') ? 'Вы кто?':
+ '';
+alert (message);
 </script>
 </body>
 </html>
