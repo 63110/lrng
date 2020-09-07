@@ -9,27 +9,30 @@
 
 <body>
     <script>
-       'use strict';
+        'use strict';
         const n = +prompt('Введите количество чисел');
-        
-        let i = 2;
-       labelNum:  while (i <= n) {
-           let j = 2;
-           while(j < i) {
-            if ((i % j==0) && (j!=i)){
-            ++i;
-            continue labelNum;
-            } 
-            j++;
-        }
+       labelNum: for (let i = 2; i <= n; i++) {
+            for (let j = 2; j < i; j++) 
+            {
+            if (i % j==0) continue labelNum;
+            }
+            alert(i);
+            }
+        exit(0);
+        /* let i = 2;
+        labelNum: while (i <= n) {
+            let j = 2;
+            while (j < i) {
+                if ((i % j == 0) && (j != i)) {
+                    ++i;
+                    continue labelNum;
+                }
+                j++;
+            }
             alert(i++);
-            ++i;
-       }
-            
-        
-    
-    
-    
-</script>
+        }
+*/ 
+    </script>
 </body>
+
 </html>
