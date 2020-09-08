@@ -8,9 +8,10 @@
 </head>
 
 <body>
-    <script> const ask = (question, yes, no) =>
-        confirm(question) ? yes() : no();
-    
+    <script> function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+      }
     ask(
         "Вы согласны?",
         () => alert("Вы согласились."),
