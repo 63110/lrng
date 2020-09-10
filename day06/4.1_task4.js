@@ -9,13 +9,13 @@ let menu = {
 function multiplyNumeric(obj)
 {
     for (let key in obj) {
-    if (typeof obj[key] == 'number')
-    obj[key]*=2;
-    
-}
-console.log(obj[key]);
-}
-    console.log(obj[key]);
+    if (typeof obj[key] === 'number');
+    let result = obj[key] * 2;
+    }
+
+console.log(multiplyNumeric(obj));
+  }
+    //console.log(obj[key]);
     // let result = multiplyNumeric[key]
 
 
