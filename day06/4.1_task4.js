@@ -1,30 +1,23 @@
 "use strict";
 
 let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu"
+    width: 200,
+    height: 300,
+    title: "My menu",
 };
 
-function multiplyNumeric(obj)
-{
+function multiplyNumeric(obj) {
     for (let key in obj) {
-    if (typeof obj[key] === 'number');
-    let result = obj[key] * 2;
+        if (typeof obj[key] == 'number') {
+        obj[key] *= 2;
     }
-
-console.log(multiplyNumeric(obj));
-  }
-    //console.log(obj[key]);
-    // let result = multiplyNumeric[key]
-
-
-
-// после вызова функции
-/*
+}
+}
+multiplyNumeric(menu);
+  
+console.log(menu.width)
 menu = {
-  width: 400,
-  height: 600,
-  title: "My menu"
+    width: 400,
+    height: 600,
+    title: "My menu",
 };
-*/
