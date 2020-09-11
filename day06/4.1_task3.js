@@ -1,18 +1,20 @@
 "use strict";
 
 let salaries = {
-    John: 130,
-    Ann: 100,
-    Pete: 160,
+    John: 0,
+    Ann: 10,
+    Pete: 0,
 };
-let sum = 0;
-function salEmpty(salaries) {
-    for (let key in salaries) 
-    if (sum==0) {
-        return "loh y tebya 0";
-     }
-    return false;
+
+function summ(salaries) {
+    let sum = 0;
+    for (let key in salaries) {
+        sum += salaries[key];
     }
-sum = salaries.John + salaries.Ann + salaries.Pete;
-console.log(salEmpty(salaries));
-console.log(sum);
+    return sum;
+}
+console.log(summ(salaries));
+
+if (summ(salaries)== 0) {
+    console.log("loh y tebya 0");
+}
