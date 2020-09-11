@@ -1,10 +1,18 @@
 "use strict";
 
 let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130,
+    John: 130,
+    Ann: 100,
+    Pete: 160,
 };
-
-const sum = salaries.John + salaries.Ann + salaries.Pete;
+let sum = 0;
+function salEmpty(salaries) {
+    for (let key in salaries) 
+    if (sum==0) {
+        return "loh y tebya 0";
+     }
+    return false;
+    }
+sum = salaries.John + salaries.Ann + salaries.Pete;
+console.log(salEmpty(salaries));
 console.log(sum);
