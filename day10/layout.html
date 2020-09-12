@@ -1,0 +1,108 @@
+<div class="conteiner">
+  <div class="top-menu">
+    <div class="top-menu-place"></div>
+    <div class="Logo">LOGO</div>
+    <div class="top-menu-center-upper">Center menu</div>
+    <div class="top-menu-center-bottom">
+      <input class="search-tracker" />
+      <button class="send-button_1">Find</button>
+    </div>
+  </div>
+  <div class="search">
+    <input class="message-input" />
+    <button class="send-button_2">Find</button>
+  </div>
+  <div class="main-menu">
+    <div class="left-menu">
+      <div class="left-menu-navigation">Left menu navigation</div>
+      <div class="left-menu-divide">divide</div>
+    </div>
+    <div class="main">
+      <div class="news">News</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+  }
+  .conteiner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .top-menu {
+    display: flex;
+    background-color: lightblue;
+    color: yellow;
+  }
+  .top-menu-place {
+    display: flex;
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: green;
+  }
+  .Logo {
+    flex: 0 0 510px;
+    padding-bottom: 10px;
+  }
+  .top-menu-center-upper {
+    padding-top: 20px;
+    margin-right: auto;
+  }
+  .top-menu-center-bottom {
+    flex: 1 1 0;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    color: green;
+  }
+  .search-tracker {
+    background-color: yellow;
+    color: red;
+  }
+  .send-button_1 {
+    color: black;
+  }
+  .search {
+    margin: auto;
+    display: flex;
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .message-input {
+    flex: 0 0 300px;
+    color: black;
+  }
+  .send-button_2 {
+    flex: 0 0 10px;
+    color: black;
+  }
+  .main-menu {
+    flex: 1 1 0;
+    display: flex;
+  }
+  .left-menu {
+    flex-direction: column;
+    flex: 0 0 250px;
+    background-color: #eeeeee;
+    border-right: 2px solid black;
+  }
+  .left-menu-navigation {
+    padding-bottom: 180px;
+    background-color: yellow;
+  }
+  .left-menu-divide {
+    background-color: brown;
+    padding-bottom: 710px;
+  }
+  .main {
+    flex-direction: column;
+    border: 2px solid red;
+    flex: 1 1 0;
+    display: flex;
+    background-image: url(https://c7.hotpng.com/preview/353/158/376/das-erste-ard-logo-television-channel-das-fenstertheater.jpg);
+  }
+</style>
