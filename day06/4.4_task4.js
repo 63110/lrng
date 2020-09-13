@@ -12,6 +12,6 @@ let calculator = {
         return this.a * this.b;
      }
   };
-  alert(calculator.read() );
+  calculator.read() ;
   alert( calculator.sum() );
   alert( calculator.mul() );
