@@ -1,0 +1,27 @@
+
+<!DOCTYPE HTML>
+<html>
+    
+    <body>  
+<script>
+function sumInput() {
+
+let array = [];
+
+while (true) {
+
+    let num = prompt ('vvedite znach');
+if (num === "" || num === null || !isFinite(num)) break;
+    array.push(+num);
+} 
+let sum = 0;
+for (let key of array) {
+    sum += key;
+    }
+    return sum;
+    }
+alert (sumInput());
+
+</script>
+</body>
+</html>

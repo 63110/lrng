@@ -1,0 +1,35 @@
+
+<!DOCTYPE HTML>
+<html>
+    
+    <body>  
+<script>
+   //task_1
+let fruits = ["Яблоки", "Груша", "Апельсин"];
+
+let shoppingCart = fruits;
+
+shoppingCart.push("Банан");
+
+alert( fruits.length );
+
+//task_2
+let style = ["Jazz", "BLuze"];
+style.push ("Rock-n-Roll");
+style[Math.floor((style.length-1)/2)] ="Classic";
+console.log( style.shift() );
+style.unshift("Rap", "Reggae");
+console.log(style)
+
+// task_3
+let arr = ["a", "b"];
+
+arr.push(function() {
+  console.log( this );
+})
+
+arr[2]();
+// result = a, b , function 
+</script>
+</body>
+</html>
